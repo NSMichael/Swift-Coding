@@ -428,3 +428,23 @@ func send(job: Int, toPrinter printerName: String) throws -> String {
     }
     return "Job sent"
 }
+
+do {
+    let printerResponse = try send(job: 1040, toPrinter: "Bi Sheng")
+    // 改变 printer 的名字为 "Never Has Toner"
+//    let printerResponse = try send(job: 1040, toPrinter: "Never Has Toner")
+    print(printerResponse)
+} catch {
+    print(error)
+}
+
+do {
+    let printerResponse = try send(job: 1040, toPrinter: "Gutenberg")
+    print(printerResponse)
+} catch PrinterError.onFire {
+    print("I'll just put this over here, with the rest of the fire.")
+} catch let printerError as PrinterError {
+    print("Printer error: \(printerError).")
+} catch {
+    print(error)
+}
