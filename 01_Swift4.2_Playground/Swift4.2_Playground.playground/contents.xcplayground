@@ -3,5 +3,6 @@
     <pages>
         <page name='00-Swift概览'/>
         <page name='01-基础'/>
+        <page name='02-基本运算符'/>
     </pages>
 </playground>
