@@ -6,5 +6,8 @@
         <page name='02-基本运算符'/>
         <page name='03-字符串和字符'/>
         <page name='04-集合类型'/>
+        <page name='05-控制流'/>
+        <page name='06-函数'/>
+        <page name='07-闭包'/>
     </pages>
 </playground>
